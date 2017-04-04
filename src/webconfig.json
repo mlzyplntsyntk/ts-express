@@ -1,0 +1,28 @@
+{
+	"db" : {
+		"host": "127.0.0.1",
+		"user": "root",
+		"password": "",
+		"database" : "st",
+		"port" : 3306
+	},
+	"mem" : "127.0.0.1:11211",
+	"session" : {
+		"name": "session",
+		"keys": ["m12yp1nt5yntk", "m12yp1nt5yntk2"],
+		"maxAge": 86400000
+	},
+	"defaults" : {
+		"route" : "index",
+		"action" : "get",
+		"port" : 1161,
+		"file_path" : "../storyteller/html"
+	},
+	"routes" : [
+		{ "name" : "Home", "map" : ["index", "read"], "tpl" : "tpl.html", "view" : "home.html" },
+		{ "name" : "Create", "map" : ["create"], "tpl" : "tpl.html", "view" : "create.html" },
+		{ "name" : "Create", "map" : ["story"], "tpl" : "tpl.html", "view" : "story.html" },
+		{ "name" : "Create", "map" : ["account"], "tpl" : "tpl.html", "view" : "account.html" },
+		{ "name" : "Create", "map" : ["activate"], "tpl" : "tpl.html", "view" : "activate.html" }
+	]
+}

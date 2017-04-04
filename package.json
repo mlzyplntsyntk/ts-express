@@ -1,0 +1,30 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "description": "experiments with typescript",
+  "scripts": {
+    "start": "npm run build:live",
+    "build:live": "nodemon --exec ts-node src/index.ts"
+    },
+    "dependencies" : {
+        "mysql" : "*",
+        "@types/mysql" : "*",
+        "express": "4.14.0",
+        "@types/express":"*",
+    	"cookie-parser":"~1.4.3",
+        "@types/cookie-parser":"*",
+    	"cookie-session" : "~1.2.0",
+        "@types/cookie-session":"*",
+    	"body-parser" : "~1.15.2",
+        "@types/body-parser":"*"
+    },
+  "devDependencies" : {
+    "typescript":"*",
+    "@types/node" : "*",
+    "ts-node" : "*",
+    "nodemon" : "*",
+    "tslint": "~4.5.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
