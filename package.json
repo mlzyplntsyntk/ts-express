@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "experiments with typescript",
   "scripts": {
+      "pretest" : "tsc",
+      "test" : "nodemon --exec mocha",
     "start": "npm run build:live",
     "build:live": "nodemon --exec ts-node src/index.ts"
     },
@@ -23,7 +25,9 @@
     "@types/node" : "*",
     "ts-node" : "*",
     "nodemon" : "*",
-    "tslint": "~4.5.0"
+    "tslint": "~4.5.0",
+    "mocha": "^2.3.2",
+    "request" : "*"
   },
   "author": "",
   "license": "ISC"
