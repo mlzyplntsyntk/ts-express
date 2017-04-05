@@ -8,7 +8,6 @@
         "declaration": false,
         "moduleResolution": "node",
         "target": "es5",
-        "outDir": "./dist",
         "typeRoots": [
           "node_modules/@types"
         ],
@@ -19,10 +18,11 @@
       ]
     },
     "include": [
-        "src/**/*"
+        "src/**/*",
+        "test/**/*",
+        "helper/**/*"
     ],
     "exclude": [
-        "node_modules",
-        "**/*.spec.ts"
+        "node_modules"
     ]
 }
