@@ -7,7 +7,7 @@ Desktop.ini
 dist/
 node_modules/
 .git/
-
+*.js
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
