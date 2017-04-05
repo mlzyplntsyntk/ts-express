@@ -89,14 +89,17 @@ export class Server {
         this.handlers.push(handler);
     }
 
-    public static start(portNumber:number) : void {
+    public static async start(portNumber:number, callback?:Function) : Promise<string> {
         this.get();
-        this.app.listen(portNumber, (err)=>{
-            if (err) {
-                console.log(err);
-                return;
-            }
-            console.log("app listening");
+        return new Promise<string>((resolve,reject)=>{
+            this.app.listen(portNumber, (err)=>{
+                if (err) {
+                    reject(err);
+                    return;
+                }
+                console.log("app listening");
+                resolve("ok");
+            });
         });
     }
 }
